@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romanuk Dmitry - developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Audi RS6 — всё о легендарном универсале</title>
+  <meta name="description" content="История, характеристики и фото Audi RS6. Поколения, двигатель, дизайн, галерея." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+    :root {
+      --bg: #0f1115;
+      --card: #151822;
+      --text: #e8ecf1;
+      --muted: #9aa3ad;
+      --accent: #d2042d; /* RS-акцент */
+      --line: #232735;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    a { color: var(--text); text-decoration: none; }
+    .container { max-width: 1080px; margin: 0 auto; padding: 24px; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid var(--line); }
+    .logo { display: flex; gap: 12px; align-items: center; }
+    .logo .mark { width: 12px; height: 12px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 24px rgba(210,4,45,.5); }
+    .logo h1 { margin: 0; font-size: 20px; font-weight: 700; letter-spacing: .4px; }
+    nav { display: flex; gap: 16px; }
+    nav a { color: var(--muted); font-weight: 600; }
+    nav a:hover { color: var(--text); }
+    .hero {
+      display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; padding: 28px 0;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)) , var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px; padding: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.25);
+    }
+    .card h2 { margin: 0 0 10px; font-size: 22px; }
+    .card p { margin: 8px 0; color: var(--muted); line-height: 1.6; }
+    .specs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 12px; }
+    .spec { padding: 12px; border: 1px solid var(--line); border-radius: 10px; background: #121420; }
+    .spec .k { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .6px; }
+    .spec .v { margin-top: 6px; font-weight: 700; font-size: 16px; }
+    .badge { display: inline-block; background: #121420; border: 1px solid var(--line); padding: 6px 10px; border-radius: 999px; font-size: 12px; color: var(--muted); }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .img-card { position: relative; overflow: hidden; border-radius: 12px; border: 1px solid var(--line); background: #0c0e15; }
+    .img-card img { display: block; width: 100%; height: 180px; object-fit: cover; filter: saturate(110%); transition: transform .3s ease, filter .3s ease; }
+    .img-card:hover img { transform: scale(1.05); filter: saturate(120%); }
+    .img-card .cap {
+      position: absolute; left: 0; right: 0; bottom: 0; padding: 10px 12px;
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.6) 60%, rgba(0,0,0,.8) 100%);
+      color: #cdd3db; font-size: 12px;
+    }
+    .section { margin: 30px 0; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .gen { border: 1px solid var(--line); border-radius: 12px; padding: 14px; background: #121420; }
+    footer { margin: 28px 0; padding: 20px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    .btn {
+      display: inline-flex; gap: 10px; align-items: center;
+      background: var(--accent); color: white; padding: 10px 14px; border-radius: 10px; font-weight: 700; border: none; cursor: pointer;
+      box-shadow: 0 8px 24px rgba(210,4,45,.35);
+    }
+    .btn:active { transform: translateY(1px); }
+    .source { color: var(--muted); font-size: 12px; margin-top: 8px; }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: 1fr 1fr; }
+      .specs { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+  </head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark"></div>
+        <h1>Romanuk Dmitry</h1>
+      </div>
+      <nav>
+        <a href="#hero">Обо мне</a>
+        <a href="#perk">Навыки</a>
+        <a href="#progect">Проекты</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="container">
+        <h2>Обо мне</h2>
+        <p>
+          Привет, я Дима.</n> Начинающий разработчик ПО. Учусь в колледже, пишу на Python, изучаю веб и занимаюсь монтажем видео.
+        </p>
+        <div class="source"></div>
+        <div style="margin-top: 44px; display: flex; gap: 10px;">
+          <a class="btn" href="#progect">Смотреть проекты</a>
+          <span style="margin-top: 10px;" class="badge">Начинающий разработчик • Проекты</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Моя жизнь</h2>
+        <ul style="margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.7;">
+          Мне 17 лет, я живу в городе Молодечно, учусь в МТЭКе, на втором курсе, на специальности
+          "разработка и сопровождение программного обеспечения"
+          В свободное время я, в основном, играю в игры, такие как Counter-Strike 2, Majestic и многие другие.
+          Иногда снимаю и монтирую видео на YouTube и TikTok. Делаю 3д модели и диораммы в Blender.
+        </ul>
+      </div>
+    </section>
+    <section id="perk" class="section card">
+      <h2>Навыки</h2>
+      <p></p>
+      <div class="specs">
+        <div class="spec"><div class="k">Python</div><div class="v">Базовый уровень</div></div>
+        <div class="spec"><div class="k">Blender</div><div class="v">Начальный уровень</div></div>
+        <div class="spec"><div class="k">HTML/CSS</div><div class="v">Базовый уровень</div></div>
+        <div class="spec"><div class="k">Adobe Photoshop</div><div class="v">Средний уровень</div></div>
+        <div class="spec"><div class="k">Git</div><div class="v">Базовый уровень</div></div>
+        <div class="spec"><div class="k">CapCut</div><div class="v">Средний уровень</div></div>
+      </div>
+      <p class="source"></p>
+    </section>
+    <section id="progect" class="section">
+      <div class="grid">
+        <div class="gen">
+          <h3>Проекты</h3>
+          <p style="color: var(--muted);">
+            Сдесь представлены несколько моих проектов в различных сферах
+          </p>
+          <ul style="margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.6;">
+            <h3>Цифровая иллюстрация "Skins.army"</h3>
+            <p>Авторская стилизованная картинка, созданная в Photoshop.
+            Сделанная в стиле рекламы сайтов. Сделана исключительно в целях обучения</p>
+            <h3>Цифровая иллюстрация "Отель"</h3>
+            <p>Авторская стилизованная моделька, созданная в Blender.
+            Делав эту работу, я вдохновлялся обложкой трека "Отель".</p>
+            <h3>Цифровая иллюстрация "Комнатка"</h3>
+            <p>Авторская стилизованная моделька, созданная в Blender.
+            Моя самая первая успешная работа с освещением, сглаживанием и итоговым экспортом красивой картинки.</p>
+          </ul>
+        </div>
+        <div class="gen">
+          <h3>Ниже представлены иллюстрации моих работ</h3>
+          <p style="color: var(--muted);">
+            
+          </p>
+          <p class="source"></p>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="section card">
+      <h2>Галерея</h2>
+      <p>Мои работы</p>
+      <div class="gallery" id="gallery-grid">
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const images = [
+      {
+        url: "images/skinsarmy.jpg",
+        caption: "Skins.army",
+        credit: ""  
+      },
+      {
+        url: "images/hotel.png",
+        caption: "Отель",
+        credit: ""
+      },
+      {
+        url: "images/room.jpg",
+        caption: "Комнатка",
+        credit: ""
+      }
+    ];
+    
+    
+
+    const grid = document.getElementById('gallery-grid');
+    images.forEach(({ url, caption, credit }) => {
+      const card = document.createElement('div');
+      card.className = 'img-card';
+      card.innerHTML = `
+        <img src="${url}" alt="${caption}">
+        <div class="cap">
+          <div>${caption}</div>
+          <div style="opacity:.8">${credit}</div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  </script>
+  <section id="contact" class="section card">
+      <h2>Мои контакты</h2>
+      <p>Как вы можете со мной связаться</p>
+      <div class="specs">
+        <div class="spec"><div class="k">Telegram</div><div class="v">@dimon4ik37700</div></div>
+        <div class="spec"><div class="k">Discord</div><div class="v">dimon4ik3770</div></div>
+        <div class="spec"><div class="k">Gmail</div><div class="v">dimaroma0096@gmail.com</div></div>
+        <div class="spec"><div class="k">ВКонтакте</div><div class="v">@dimaroma77</div></div>
+      </div>
+</body>
+</html>
